@@ -1,3 +1,135 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-weight: 300;
+  color: grey;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+h5 {
+  color: grey;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h2 {
+  color: white;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 42px;
+}
+
+h1 {
+  color: white;
+  font-size: 62px;
+}
+
+header {
+  background-image: url("../images/splash.png");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+header nav .row {
+  justify-content: space-between;
+  padding-top: 40px;
+}
+header nav .row #mobile-menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+header nav .row #mobile-menu ul li {
+  padding: 0 30px;
+}
+header nav .row #mobile-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+header nav .row img {
+  height: 35px;
+  width: auto;
+}
+header .splash-inner {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header .splash-inner .page-title {
+  margin-top: 0px;
+}
+header .splash-inner .btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 0;
+  border-style: none;
+  border-radius: 3px;
+  line-height: 1;
+  min-width: 140px;
+  margin: 25px auto 0 auto;
+  padding: 20px 45px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #fed136;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: all 1s;
+  background-image: linear-gradient(90deg, transparent 50%, #fed136 50%);
+}
+header .splash-inner .btn:hover {
+  background-position: 0 100%;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.services h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.services h5 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 80px;
+}
+.services .row {
+  text-align: center;
+}
+.services .row h4 {
+  margin: 15px auto;
+}
+.portfolio {
+  background-color: grey;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHNCQUFBO0FDQ0o7O0FERUE7RUFDSSxTQUFBO0VBQ0EsaUNBQUE7QUNDSjs7QURFQTtFQUNJLGVBQUE7QUNDSjs7QURFQTtFQUNJLGdCQUFBO0VBQ0EsV0FBQTtFQUNBLGdCQUFBO0FDQ0o7O0FERUE7RUFDSSxlQUFBO0FDQ0o7O0FERUE7RUFDSSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7QUNDSjs7QURFQTtFQUNJLFlBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsZUFBQTtBQ0NKOztBREVBO0VBQ0ksWUFBQTtFQUNBLGVBQUE7QUNDSjs7QURJQTtFQUVJLDZDQUFBO0VBQ0EsdUJBQUE7RUFDQSwyQkFBQTtFQUNBLDRCQUFBO0VBQ0Esc0JBQUE7RUFDQSxXQUFBO0VBQ0EsYUFBQTtFQUVBLGtCQUFBO0FDSEo7QURLSTtFQUNJLDhCQUFBO0VBQ0EsaUJBQUE7QUNIUjtBREtRO0VBQ0ksYUFBQTtFQUNBLG1CQUFBO0VBQ0EscUJBQUE7QUNIWjtBRElZO0VBQ0ksZUFBQTtBQ0ZoQjtBREdnQjtFQUNJLHFCQUFBO0VBQ0EsWUFBQTtBQ0RwQjtBRE1RO0VBQ0ksWUFBQTtFQUNBLFdBQUE7QUNKWjtBRFFJO0VBRUksa0JBQUE7RUFDQSxTQUFBO0VBQ0EsUUFBQTtFQUNBLGdDQUFBO0VBQ0Esa0JBQUE7QUNQUjtBRFNRO0VBQ0ksZUFBQTtBQ1BaO0FEVVE7RUFDSSxxQkFBQTtFQUVBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0VBRUEsZUFBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxjQUFBO0VBRUEsZ0JBQUE7RUFDQSx3QkFBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBRUEsWUFBQTtFQUNBLHlCQUFBO0VBQ0EsMkJBQUE7RUFDQSxxQkFBQTtFQUVBLGtCQUFBO0VBRUEsc0VBQUE7QUNkWjtBRGlCUTtFQUNJLDJCQUFBO0VBQ0EsNkJBQUE7RUFDQSxpQkFBQTtFQUNBLG1CQUFBO0FDZlo7O0FEcUJBO0VBQ0ksaUJBQUE7RUFDQSxvQkFBQTtBQ2xCSjs7QURzQkk7RUFDSSxrQkFBQTtFQUNBLG1CQUFBO0FDbkJSO0FEc0JJO0VBQ0ksa0JBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7QUNwQlI7QUR1Qkk7RUFDSSxrQkFBQTtBQ3JCUjtBRHVCUTtFQUNJLGlCQUFBO0FDckJaO0FEOEJBO0VBQ0ksc0JBQUE7QUM1QkoiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
